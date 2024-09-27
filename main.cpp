@@ -4,7 +4,7 @@ int main()
 {   
     int price = 0, totalPrice = 0, discount;
     
-    std::cout << "Total: ";
+    std::cout << "Siparisinizin toplam tutarini girin: ";
     
     std::cin >> totalPrice;
     
@@ -13,12 +13,13 @@ int main()
          discount = (totalPrice * 8) / 100;
          price = totalPrice - discount;
          
-         std::cout << price;
+         std::cout << "Indirim orani: %8" << std::endl;
+         std::cout << "Toplam fiyat: " << price;
     } 
     else 
     {
          price = totalPrice;
-         std::cout << price;     
+         std::cout << "Toplam fiyat: " << price;     
     }
     
     return 0;   
