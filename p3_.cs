@@ -23,37 +23,29 @@ namespace NetApp
 {
     internal class Program
     {
-        static int distanceCalculator(int x, int y, int z)
+        static int distanceCalculator()
         {
-            int result = x + y + z;
-           
-            
-            //
 
-            Console.Write($"Gideceğiniz toplam mesafe: {x + y + z}");
+            Console.WriteLine("Nevşehir ile Kayseri arasındaki mesafeyi giriniz");
+            int x = Convert.ToInt32(Console.ReadLine());
+            
+            Console.WriteLine("Kayseri ile Adana arasındaki mesafeyi giriniz");
+            int y = Convert.ToInt32(Console.ReadLine());
+            
+            Console.WriteLine("Adana ile Mersin arasındaki mesafeyi giriniz");
+            int z = Convert.ToInt32(Console.ReadLine());
+            int result = x + y + z;            
+
+            Console.Write($"Gideceğiniz toplam mesafe: {result}");
 
             return result;
-            //Console.Write(x + y + z);
         }
        
         static void Main(string[] args)
         {
-            int x = 0; int y = 0; int z = 0;
 
-            Console.WriteLine("Nevşehir ile Kayseri arasındaki mesafeyi giriniz");
-            x = Convert.ToInt32(Console.ReadLine());
-            //
-            Console.WriteLine("Kayseri ile Adana arasındaki mesafeyi giriniz");
-            y = Convert.ToInt32(Console.ReadLine());
-            //
-            Console.WriteLine("Adana ile Mersin arasındaki mesafeyi giriniz");
-            z = Convert.ToInt32(Console.ReadLine());
+            distanceCalculator();
 
-
-            distanceCalculator(x,y,z);
-
-            //distanceCalculator(n_k, k_a, a_m);
-            //y = Convert.ToInt32(Console.ReadLine());
 
             Console.ReadKey();
             
